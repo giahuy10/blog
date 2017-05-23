@@ -1,0 +1,19 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+.ed-orange {
+	color: #d35400 !important;
+}
+.ed-orange-bg{
+	background: #d35400 !important;
+	color: #fff; !important
+}
+.ed-orange-bg a {
+	color: #fff; !important
+}
+.ed-logo {
+    font-size: 36px;
+    text-transform: uppercase;
+	font-family: fantasy;
+}

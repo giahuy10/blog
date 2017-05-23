@@ -1,0 +1,28 @@
+div#ed-main-menu .container {
+    border-radius: 5px;
+}
+.ed-navigation .nav {
+    margin: 0;
+    padding: 10px 0;
+}
+.ed-navigation .nav-pills>li.active>a, 
+.ed-navigation .nav-pills>li.active>a:hover,
+.ed-navigation .nav-pills>li.active>a:focus,
+.ed-navigation .nav>li>a:hover,
+.ed-navigation .nav>li>a:focus {
+    color: #fff;
+    background-color: #e59839;
+}
+.ed-search {
+    display: -webkit-flex;
+    display: flex;
+	 -webkit-align-items: center;
+    align-items: center;
+	    height: 60px;
+}
+.ed-search input[type="search"] {
+    -webkit-appearance: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}

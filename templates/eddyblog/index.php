@@ -39,8 +39,12 @@ JHtml::_('stylesheet', 'user.css', array('relative' => true));
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="<?php echo $this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css'?>" rel="stylesheet" type="text/css" />
 	<link href="<?php echo $this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css'?>" rel="stylesheet" type="text/css" />
 	<link href="<?php echo $this->baseurl . '/templates/' . $this->template . '/css/user.css'?>" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $this->baseurl . '/templates/' . $this->template . '/css/ed-mod_article.css'?>" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $this->baseurl . '/templates/' . $this->template . '/css/ed-navigation.css'?>" rel="stylesheet" type="text/css" />
+	
 </head>
 
 <body class="site <?php echo $option
@@ -53,21 +57,30 @@ JHtml::_('stylesheet', 'user.css', array('relative' => true));
 	<div class="ed-header" id="ed-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-3">
-					Eddy Nguyen
+				<div class="col-xs-12 col-sm-4">
+					<div class="ed-logo">I'M <img src="images/logo-m.png"/> Eddy <span class="ed-orange">Nguyen</span></div>
 				</div>
-				<div class="col-xs-12 col-sm-9">
+				<div class="col-xs-12 col-sm-8">
 					<jdoc:include type="modules" name="banner-top" style="none" />
 				</div>
 			</div>	
 		</div>	
 	</div>
-	<div class="ed-main-menu" id="ed-main-menu">
-		<div class="container">
-			<div class="ed-navigation">
-			
-				<jdoc:include type="modules" name="main-menu" style="none" />
+	<div class="ed-main-menu " id="ed-main-menu">
+		<div class="container ed-orange-bg">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8">
+					<div class="ed-navigation">			
+						<jdoc:include type="modules" name="main-menu" style="none" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<div class="ed-search pull-right">		
+						<jdoc:include type="modules" name="search-menu" style="none" />
+					</div>
+				</div>
 			</div>
+			
 			
 		</div>	
 	</div>
